@@ -1,0 +1,155 @@
+//1-base
+@import '1-base/typography';
+@import '1-base/resets';
+
+// 2-helper
+@import '2-helper/_varibles.scss';
+@import '2-helper/mixins';
+//3-layout
+@import '3-layout/header';
+@import '3-layout/footer';
+
+//4-components
+@import '4-components/boutons';
+
+//7-vendors
+@import '7-vendors/images';
+
+// body{
+//   background-color: $colour-primary;
+// }
+// .button{
+//   @include button
+// }
+//On essaye juste les variables d abord
+
+//le mettre dans un dossier
+
+//seachlocalisator
+.area-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color ;
+  box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.3);
+  color: $color-text-localisator;
+  height: 4rem;
+  &-button{
+    background-color: $second-color-area;
+    height: 30vh;                                     //revoir pour pas que ca depasse en hauteur qd on retreci
+  }
+}
+
+.area-search i{
+  margin-right: 1rem;
+}
+.localisator {
+  h1{
+    text-align: center;
+    padding: 1rem 0 1rem 0;         // faire une mixin pour les autres titres de meme
+    margin: auto;
+      //revoir le font weight
+  }
+  h2{
+    text-align: center;
+    width: 66%;
+    margin: 1rem auto; 
+  }
+}
+.localisator button{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+//working
+
+.working{
+  margin: 4rem auto;
+  h1{
+    margin-left: 1rem;
+  }
+  ul{
+    padding: 1rem 1.5rem 0px 1.5rem;
+  }
+  li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    background-color: $second-color-area;
+    i{
+      width: 1rem;
+      margin: auto 2rem;
+    }
+    .work-icone{
+      color: $working-icone-color;
+    }
+    &:hover{
+      background-color: $color-primary;       //Rework + icone color
+    }
+  }
+}
+.fa-circle{
+  position: absolute;
+  left: -20px;
+  color: $color-primary;
+  font-size: 33px;
+}
+
+.circle-number{
+  position: absolute;
+  color: $light-color;
+  left: 23px;
+}
+
+
+//list resto
+
+.restaurant-list{
+  background-color: #F2F2F2;        //trouver variable
+  &__article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  h1{
+    margin-left: 0;
+  }
+  h2,p{
+    color: #000000;
+  }
+  .restaurant-presentation{
+    padding: 1rem 0 1rem 1rem;
+  }
+}
+article{
+  position: relative;
+  background-color: #FFF;
+  border-radius: 2rem;
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  .photo{
+    width: 100%;
+    margin: auto;
+  }
+  img{
+  height: 9rem;
+  border-radius: 2rem 2rem 0 0;
+  }
+  h2{
+    font-weight: 700;
+  }
+  i{
+    position: absolute;
+    right: 10px;
+    bottom: 27px;
+    font-size: 20px;    //faire hover ou il change de couleur
+  }
+}
+

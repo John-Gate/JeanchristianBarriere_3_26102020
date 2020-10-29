@@ -1,0 +1,30 @@
+
+//Button
+@mixin button{
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  border-radius: 50px;
+  background: $gradient;
+  outline: none;
+    p{
+      color: $background-color;
+    }
+    &:hover{ 
+  }
+}
+
+//images
+@mixin images{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+//shadow
+@mixin main-shadow{
+
+}
+

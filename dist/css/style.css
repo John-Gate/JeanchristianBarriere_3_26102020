@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header img {
+  display: block;
+  height: 2rem;
+  width: auto;
+  margin: 0.5rem auto;
+}
+
+footer {
+  background-color: #353535;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer img {
+  padding: 20px 0 0 40px;
+  width: 9rem;
+  -webkit-filter: invert(1);
+}
+
+footer li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #FFFFFF;
+}
+a i {
+  width: 10px;
+  padding-right: 20px;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  outline: none;
+}
+.button p {
+  color: #DDDD;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.area-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DDDD;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+  color: #0E0E0E;
+  height: 4rem;
+}
+.area-search-button {
+  background-color: #F6F6F6;
+  height: 30vh;
+}
+
+.area-search i {
+  margin-right: 1rem;
+}
+
+.localisator h1 {
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  margin: auto;
+}
+.localisator h2 {
+  text-align: center;
+  width: 66%;
+  margin: 1rem auto;
+}
+
+.localisator button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.working {
+  margin: 4rem auto;
+}
+.working h1 {
+  margin-left: 1rem;
+}
+.working ul {
+  padding: 1rem 1.5rem 0px 1.5rem;
+}
+.working li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 1.5rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  background-color: #F6F6F6;
+}
+.working li i {
+  width: 1rem;
+  margin: auto 2rem;
+}
+.working li .work-icone {
+  color: #696969;
+}
+.working li:hover {
+  background-color: #9356DC;
+}
+
+.fa-circle {
+  position: absolute;
+  left: -20px;
+  color: #9356DC;
+  font-size: 33px;
+}
+
+.circle-number {
+  position: absolute;
+  color: #FFFFFF;
+  left: 23px;
+}
+
+.restaurant-list {
+  background-color: #F2F2F2;
+}
+.restaurant-list__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant-list h1 {
+  margin-left: 0;
+}
+.restaurant-list h2, .restaurant-list p {
+  color: #000000;
+}
+.restaurant-list .restaurant-presentation {
+  padding: 1rem 0 1rem 1rem;
+}
+
+article {
+  position: relative;
+  background-color: #FFF;
+  border-radius: 2rem;
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+}
+article .photo {
+  width: 100%;
+  margin: auto;
+}
+article img {
+  height: 9rem;
+  border-radius: 2rem 2rem 0 0;
+}
+article h2 {
+  font-weight: 700;
+}
+article i {
+  position: absolute;
+  right: 10px;
+  bottom: 27px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

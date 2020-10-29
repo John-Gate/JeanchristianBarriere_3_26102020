@@ -1,0 +1,24 @@
+footer{
+  background-color: $footer-color;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer img{
+  padding:20px 0 0 40px ;
+  width: 9rem;
+  -webkit-filter: invert(1);
+}
+
+footer li{
+  margin-bottom: .5rem;
+}
+ a{
+  color: $light-color;
+    i{
+      width: 10px;                  //allow the text alignement
+      padding-right: 20px;
+  } 
+}

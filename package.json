@@ -1,0 +1,13 @@
+{
+  "name": "p3_barriere_jeanchristian",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./dist/css/style.css", "prefix": "postcss ./dist/css/style.css --use autoprefixer -d. /dist/css/style.css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "browserslist": "last 4 versions"
+}
