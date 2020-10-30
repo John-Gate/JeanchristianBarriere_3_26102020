@@ -166,8 +166,8 @@ article{
 //menu display dans le menu a la francaise
 //margin left: 10px
 .background-image-menu{
-  background-image: url(sass/ressources/images/alafrancaise.jpg);
   @include images;
+  background-image: url(/alafrancaise.jpg);
   height: 23rem;
   background-size: cover;
 
