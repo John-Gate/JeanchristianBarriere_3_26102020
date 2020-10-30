@@ -20,7 +20,9 @@
 //7-vendors
 @import '7-vendors/images';
 
-
+img{
+  @include images;
+}
 //seachlocalisator
 .area-search{
   display: flex;
@@ -164,11 +166,11 @@ article{
 //menu display dans le menu a la francaise
 //margin left: 10px
 .background-image-menu{
-  background-image: url('./sass/ressources/images/alafrancaise.jpg');
+  background-image: url(/sass/ressources/images/alafrancaise.jpg);
   @include images;
   height: 23rem;
   background-size: cover;
-  
+
 }
 
 .main-menu{
