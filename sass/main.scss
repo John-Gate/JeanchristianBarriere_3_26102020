@@ -36,7 +36,7 @@
   height: 4rem;
   &-button{
     background-color: $second-color-area;
-    height: 30vh;                                     //revoir pour pas que ca depasse en hauteur qd on retreci
+    padding: 2rem;                                     //revoir pour pas que ca depasse en hauteur qd on retreci
   }
 }
 
@@ -71,6 +71,7 @@
   }
   ul{
     padding: 1rem 1.5rem 0px 1.5rem;
+    animation: 1.5s opacity;
   }
   li{
     display: flex;
@@ -81,6 +82,8 @@
     height: 4rem;
     margin-bottom: 1rem;
     background-color: $second-color-area;
+    box-shadow: $total-shadow;
+    
     i{
       width: 1rem;
       margin: auto 2rem;
@@ -89,7 +92,11 @@
       color: $working-icone-color;
     }
     &:hover{
-      background-color: $color-primary;       //Rework + icone color
+      transition:.5s;
+      background-color: $color-primary-over;    
+       i{
+         color: $color-primary;
+       } 
     }
   }
 }
@@ -116,9 +123,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
   }
   h1{
-    margin-left: 0;
+    margin-left: 1rem;
+    padding-top: 20px;
   }
   h2,p{
     color: #000000;
@@ -128,28 +137,239 @@
   }
 }
 article{
-  position: relative;
-  background-color: #FFF;
-  border-radius: 2rem;
-  width: 80%;
-  margin: 1rem auto;
-  display: flex;
+  @include fadein;
+  @include background-article;
+  box-shadow: $total-shadow;
   .photo{
     width: 100%;
     margin: auto;
   }
   img{
   height: 9rem;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: $top-corner;
   }
   h2{
     font-weight: 700;
   }
-  i{
-    position: absolute;
-    right: 10px;
-    bottom: 27px;
-    font-size: 20px;    //faire hover ou il change de couleur
+  .fa-heart{
+    @include heart;
   }
 }
+
+.new-block{
+  position: absolute;
+   top: 14px;
+   right: 13px;
+   background-color:$icon-appear;
+   padding: .5rem;
+   color: $text-new;
+}
+
+//menu display dans le menu a la francaise
+//margin left: 10px
+.background-image-menu{
+  background-image: url('/sass/ressources/images/alafrancaise.jpg');
+  @include images;
+  height: 23rem;
+  background-size: cover;
+}
+
+.main-menu{
+  display: flex;
+  flex-direction: column;
+  background-color: $second-color-area;
+  border-radius: $top-corner;
+  padding: 2rem 0;
+  margin-top: -2rem;
+  position: relative;
+  h1{
+    font-family: 'Shrikhand';
+    font-size: 1.8em;
+  }
+  h2{
+    font-size: 1rem;
+    color: $color-text-localisator;
+  }
+  .fa-heart{
+    @include heart($none);
+    margin-left: 5rem;
+    margin-top: .5rem;
+  }
+  p{
+    font-size: .8rem;
+    color: $color-text-localisator;
+  }
+  button p{
+    color: $light-color;
+  }
+}
+
+.title-menu{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem ;
+}
+
+//Margin all the h1 and h2
+.h-menu{
+  margin-left: $margin-left;
+}
+
+.menu-display article{
+  @include background-article;
+  overflow: hidden;
+  a{
+    display: flex;
+    width: 100%;       //give some space to the price
+  }
+  &:hover{
+    .anim-menu-bg{
+      padding: 0 2rem;
+      width: 2rem;
+      .fa-check-circle{
+        transition:.5s;
+        transform:rotate(360deg);
+        padding: 0 1.5rem;
+        
+      }
+    }
+  }
+}
+
+.menu-legende{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding:1rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-sous-legende{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anim-menu-bg{
+  background-color: $icon-appear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 2rem 2rem 0;
+  width: 0;                 //allow to hide
+  padding: 1rem 0;
+  -webkit-transition: all 0.55s;
+  &--icon{  
+    color: $light-color;
+    justify-content: center;
+  }
+}
+.plat-name, .description{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.prix-legende{
+  padding-right: 1.5rem;
+}
+.fa-check-circle{
+  position: static;    // counter abs-position in "article i"default
+}
+ 
+.underline{
+  border-top: 2px solid $icon-appear;
+  width: 2.5rem;
+  margin-left: $margin-left;
+}
+
+
+
+
+// .loading {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// 	height: 40px;
+// 	display: flex;
+// 	align-items: center;
+// }
+// .hideMe {
+// 	-webkit-animation: cssAnimation 2s forwards;
+// 	animation: cssAnimation 2s forwards;
+// }
+
+// @keyframes cssAnimation {
+// 	100% {
+// 		width: 0;
+// 		height: 0;
+// 		visibility: hidden;
+// 	}
+// }
+// @-webkit-keyframes cssAnimation {
+// 	100% {
+// 		width: 0;
+// 		height: 0;
+// 		visibility: hidden;
+// 	}
+// }
+// .block-screen {
+// 	position: fixed;
+// 	padding: 0;
+// 	margin: 0;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	background: rgba(255, 255, 255, .7);
+// }
+
+// .obj {
+// 	width: 7px;
+// 	height: 0px;
+// 	background: #9356DC;
+// 	margin: 0 4px;
+// 	border-radius: 10px;
+// 	animation: loading 1.5s infinite;
+// 	box-shadow: 0px 0px 1px 2px #99E2D0;
+// }
+// .obj:nth-child(2) {
+// 	animation-delay: 0.1s;
+// }
+// .obj:nth-child(3) {
+// 	animation-delay: 0.2s;
+// }
+// .obj:nth-child(4) {
+// 	animation-delay: 0.3s;
+// }
+// .obj:nth-child(5) {
+// 	animation-delay: 0.4s;
+// }
+// .obj:nth-child(6) {
+// 	animation-delay: 0.5s;
+// }
+// .obj:nth-child(7) {
+// 	animation-delay: 0.6s;
+// }
+// .obj:nth-child(8) {
+// 	animation-delay: 0.7s;
+// }
+// @keyframes loading {
+// 	0% {
+// 		height: 0%;
+// 	}
+// 	50% {
+// 		background-color: #FF79DA;
+// 		height: 40px;
+// 	}
+// 	100% {
+// 		background-color: #99E2D0;
+// 		height: 0;
+//   }
+// }
+
+
 

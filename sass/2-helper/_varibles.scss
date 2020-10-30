@@ -4,6 +4,7 @@
 
 //Purple
 $color-primary:#9356DC;
+$color-primary-over:#f5edff;
 //Pink
 $color-secondary:#FF79DA;
 //Green
@@ -13,7 +14,6 @@ $location-color:#EAEAEA;
 $background-color:#DDDD;
 $second-color-area:#F6F6F6;
 $working-icone-color:#696969;
-
 //Black
 $footer-color:#353535;
 $color-text-localisator:#0E0E0E;
@@ -21,6 +21,33 @@ $color-text-localisator:#0E0E0E;
 $light-color:#FFFFFF;
 //Gradient
 $gradient:linear-gradient($color-secondary, $color-primary);
+//anim
+$icon-appear:#99e2d0;
+$text-new:#008766;
+//shadow
+$total-shadow: 1px 1px 15px rgb(158, 158, 158);
+
+////////////
+//Margin
+////////////
+$margin-left:1rem;
+$right-home:11px;
+$right-menu:75px;
+$bottom-home:27px;
+$none:none;
+
+////////////
+//Position
+////////////
+$absolute:absolute;
+
+////////////
+//Radius
+////////////
+
+$top-corner: 2rem 2rem 0 0;
+
+
 
 
 

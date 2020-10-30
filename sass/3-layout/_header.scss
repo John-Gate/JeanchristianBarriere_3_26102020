@@ -1,6 +1,17 @@
 header img{
-  display: block;
+  display: flex;
   height: 2rem;
   width: auto;
   margin: .5rem auto;
 }
+
+ .header-menu{
+   position: relative;
+ }
+
+header .fa-arrow-left{
+  position: absolute;
+  margin:.5rem 0 0 1rem;
+  color:$color-text-localisator;
+}
+
