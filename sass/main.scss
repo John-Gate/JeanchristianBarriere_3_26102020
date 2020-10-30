@@ -5,6 +5,7 @@
 // 2-helper
 @import '2-helper/_varibles.scss';
 @import '2-helper/mixins';
+
 //3-layout
 @import '3-layout/header';
 @import '3-layout/footer';
@@ -12,18 +13,13 @@
 //4-components
 @import '4-components/boutons';
 
+//5
+
+//6
+
 //7-vendors
 @import '7-vendors/images';
 
-// body{
-//   background-color: $colour-primary;
-// }
-// .button{
-//   @include button
-// }
-//On essaye juste les variables d abord
-
-//le mettre dans un dossier
 
 //seachlocalisator
 .area-search{
@@ -146,7 +142,7 @@ article{
   }
   img{
   height: 9rem;
-  border-radius: $top-corner;
+  border-radius: $radius-top-corner;
   }
   h2{
     font-weight: 700;
@@ -178,7 +174,7 @@ article{
   display: flex;
   flex-direction: column;
   background-color: $second-color-area;
-  border-radius: $top-corner;
+  border-radius: $radius-top-corner;
   padding: 2rem 0;
   margin-top: -2rem;
   position: relative;
@@ -286,90 +282,6 @@ article{
 }
 
 
-
-
-// .loading {
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 50%;
-// 	transform: translate(-50%, -50%);
-// 	height: 40px;
-// 	display: flex;
-// 	align-items: center;
-// }
-// .hideMe {
-// 	-webkit-animation: cssAnimation 2s forwards;
-// 	animation: cssAnimation 2s forwards;
-// }
-
-// @keyframes cssAnimation {
-// 	100% {
-// 		width: 0;
-// 		height: 0;
-// 		visibility: hidden;
-// 	}
-// }
-// @-webkit-keyframes cssAnimation {
-// 	100% {
-// 		width: 0;
-// 		height: 0;
-// 		visibility: hidden;
-// 	}
-// }
-// .block-screen {
-// 	position: fixed;
-// 	padding: 0;
-// 	margin: 0;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	background: rgba(255, 255, 255, .7);
-// }
-
-// .obj {
-// 	width: 7px;
-// 	height: 0px;
-// 	background: #9356DC;
-// 	margin: 0 4px;
-// 	border-radius: 10px;
-// 	animation: loading 1.5s infinite;
-// 	box-shadow: 0px 0px 1px 2px #99E2D0;
-// }
-// .obj:nth-child(2) {
-// 	animation-delay: 0.1s;
-// }
-// .obj:nth-child(3) {
-// 	animation-delay: 0.2s;
-// }
-// .obj:nth-child(4) {
-// 	animation-delay: 0.3s;
-// }
-// .obj:nth-child(5) {
-// 	animation-delay: 0.4s;
-// }
-// .obj:nth-child(6) {
-// 	animation-delay: 0.5s;
-// }
-// .obj:nth-child(7) {
-// 	animation-delay: 0.6s;
-// }
-// .obj:nth-child(8) {
-// 	animation-delay: 0.7s;
-// }
-// @keyframes loading {
-// 	0% {
-// 		height: 0%;
-// 	}
-// 	50% {
-// 		background-color: #FF79DA;
-// 		height: 40px;
-// 	}
-// 	100% {
-// 		background-color: #99E2D0;
-// 		height: 0;
-//   }
-// }
 
 
 

@@ -1,9 +1,9 @@
-////////////
-//Colors
-////////////
+////////////////////
+//Colors Variables
+////////////////////
 
 //Purple
-$color-primary:#9356DC;
+$color-primary:#9356DC;//color icone+gradient
 $color-primary-over:#f5edff;
 //Pink
 $color-secondary:#FF79DA;
@@ -16,7 +16,7 @@ $second-color-area:#F6F6F6;
 $working-icone-color:#696969;
 //Black
 $footer-color:#353535;
-$color-text-localisator:#0E0E0E;
+$color-text-localisator:#0E0E0E;//Black used in text
 //White
 $light-color:#FFFFFF;
 //Gradient
@@ -35,6 +35,7 @@ $right-home:11px;
 $right-menu:75px;
 $bottom-home:27px;
 $none:none;
+// $title-bottom:;
 
 ////////////
 //Position
@@ -44,8 +45,8 @@ $absolute:absolute;
 ////////////
 //Radius
 ////////////
+$radius-top-corner: 2rem 2rem 0 0;
 
-$top-corner: 2rem 2rem 0 0;
 
 
 

@@ -1,5 +1,6 @@
-
+//////////////
 //Button
+/////////////
 @mixin button{
   display: flex;
   justify-content: center;
@@ -19,22 +20,26 @@
       color: $light-color;
       font-weight: 700;
     }
-    &:hover{ 
-  }
 }
 
+/////////
 //images
+/////////
 @mixin images{
   display: block;
   width: 100%;
   object-fit: cover;
 }
 
+///////////
 //shadow
+///////////
 @mixin main-shadow{
 }
 
+///////////////////////
 //background-article
+////////////////////////
 @mixin background-article{
   position: relative;
   background-color: $light-color;
@@ -45,9 +50,9 @@
 }
 
 
-////////////
+//////////////////////////////////////////////
 //Key-rames to declare before your animation
-////////////
+//////////////////////////////////////////////
 
 @keyframes fade-in {
 	0% {
@@ -67,8 +72,10 @@
 		opacity: 1;
 	}
 }
-
+////////////
 //animation
+////////////
+
 @mixin fadein{
   animation: 1s fade-in ease-out;
   animation-fill-mode: backwards;
@@ -76,22 +83,22 @@
   }
 
 
-  @mixin heart($position:absolute,$right:$right-home, $bottom:$bottom-home) {
-    position: $position;
-    right: $right;
-    bottom: $bottom;
-    font-size: 20px; 
-    color: transparent;
-    -webkit-text-stroke: 1px darkslategray;
-    stroke-width: 50;
-    padding: 1px;
-    &:hover{
-      background: $gradient;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px transparent;
-      transition: 200ms ease-in-out;
-    }   
-    
-  }
+@mixin heart($position:absolute,$right:$right-home, $bottom:$bottom-home) {
+  position: $position;
+  right: $right;
+  bottom: $bottom;
+  font-size: 20px; 
+  color: transparent;
+  -webkit-text-stroke: 1px darkslategray;
+  stroke-width: 50;
+  padding: 1px;
+  &:hover{
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px transparent;
+    transition: 200ms ease-in-out;
+  }   
+  
+}
  
