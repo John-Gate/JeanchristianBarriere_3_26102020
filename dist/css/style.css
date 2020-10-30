@@ -269,15 +269,6 @@ article .fa-heart:hover {
   color: #008766;
 }
 
-.background-image-menu {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  background-image: url(/sass/ressources/images/alafrancaise.jpg);
-  height: 23rem;
-  background-size: cover;
-}
-
 .main-menu {
   display: flex;
   flex-direction: column;
