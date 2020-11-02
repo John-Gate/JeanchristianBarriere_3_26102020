@@ -516,7 +516,21 @@ article .fa-heart:hover {
   transition: 200ms ease-in-out;
 }
 
-.loading {
+.preload {
+  animation: cssAnimation 2s forwards;
+  -webkit-animation: cssAnimation 2s forwards;
+}
+.preload__screen {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+.preload__screen--loading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -525,11 +539,6 @@ article .fa-heart:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hideMe {
-  animation: cssAnimation 1s forwards;
-  -webkit-animation: cssAnimation 1s forwards;
 }
 
 @keyframes cssAnimation {
@@ -546,17 +555,6 @@ article .fa-heart:hover {
     visibility: hidden;
   }
 }
-.block-screen {
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.7);
-}
-
 .cercle-anim {
   width: 30px;
   height: 30px;
