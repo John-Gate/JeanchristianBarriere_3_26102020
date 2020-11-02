@@ -19,15 +19,12 @@
   border: 1px #ccc solid;
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: $lightcolor;
   border-radius: 50px;
   background: $gradient;
   outline: none;
   height: 3rem;
-    span{
-      color: $light-color;
-      font-weight: 700;
-    }
+  font-weight: 700;
 }
 
 /////////
