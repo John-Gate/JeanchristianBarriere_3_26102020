@@ -1,0 +1,168 @@
+//seachlocalisator-home
+.area-search{
+  @include flex;
+  background-color: $background-color ;
+  box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.3);
+  color: $color-text-localisator;
+  height: 4rem;
+    &-button{
+      background-color: $second-color-area;
+      padding: $padding-full-2;                
+    }
+    i{
+      margin-right: 1rem;
+    }
+}
+.localisator {
+  h1{
+    text-align: center;
+    padding: $padding-title-h1;    
+    margin: auto; 
+  }
+  h2{
+    text-align: center;
+    width: 66%;
+    margin: 1rem auto; 
+    font-weight:$weight-h2 ;
+    font-size:$size-title-home ;
+  }
+  button{
+    @include flex;
+    margin: auto;
+  }
+}
+
+//working-home
+.working{
+  margin: 4rem auto;
+  h1{
+    margin-left: 1rem;
+    @media screen and (min-width:600px){
+    @include flex;
+    margin: 6rem;
+    }
+  }
+  ul{
+    padding: 1rem 1.5rem 0px 1.5rem;
+    animation: 1.5s opacity;
+    @media screen and (min-width:600px){
+      @include flex;
+      height: 2rem;
+      margin: 4rem;
+    }
+  }
+  li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: $radius-full;
+    height: 4rem;
+    margin-bottom: 1rem;
+    background-color: $second-color-area;
+    box-shadow: $total-shadow;
+      i{
+        width: 1rem;
+        margin: auto 2rem;
+      }
+      .work-icone{
+        color: $working-icone-color;
+      }
+      &:hover{
+        transition:.5s;
+        background-color: $color-primary-over;    
+        i{
+          color: $color-primary;
+        } 
+      }
+      @media screen and (min-width:600px){
+        position: relative;
+        @include flex;
+        height: 8rem;
+        margin: 2rem;
+        flex-direction: column;
+        padding: 20px;
+        font-size: 20px;
+        .fa-circle{
+          top:5px;
+        }
+        .circle-number{
+          top:9px;
+        }
+      }
+  }
+}
+.fa-circle{
+  position: absolute;
+  left: -20px;
+  color: $color-primary;
+  font-size: 33px;
+}
+.circle-number{
+  position: absolute;
+  color: $light-color;
+  left: 23px;
+}
+
+//rest-list-home
+.restaurant-list{
+  background-color: $second-color-area; 
+  padding: 2rem 0;      
+    &__article{
+    @include flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    }
+    h1{
+      margin-left: $margin-title;
+      @media screen and (min-width:600px){
+        @include flex;
+        margin: 2rem;
+        }
+      
+    }
+    h2{
+      color: $color-text-localisator;
+      font-weight:$weight-h2 ;
+      font-size:$size-title-home ;
+      @media screen and (min-width:600px){
+      text-align: center;
+      }
+    }
+    
+    p{
+      color: $color-text-localisator;
+      @media screen and (min-width:600px){
+        text-align: center;
+        }
+    }
+    .restaurant-presentation{
+      padding: 1rem 0 1rem 1rem;
+    }
+    @media screen and (min-width:600px){
+    background-color: transparent;
+    }
+    &__article{
+      @media screen and (min-width:600px){
+        @include flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        article{
+          margin:1rem;
+          width: 40%;
+          flex-wrap: wrap;
+          min-width: 260px;
+        }
+      }
+    }
+      
+}
+.new-block{
+   position: absolute;
+   top: 14px;
+   right: 13px;
+   background-color:$icon-appear;
+   padding: .5rem;
+   color: $text-new;
+}
+

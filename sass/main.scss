@@ -13,271 +13,110 @@
 //4-components
 @import '4-components/boutons';
 
-//5
+//5-pages
+@import '5-pages/home';
+@import '5-pages/secondary';
 
-//6
 
-//7-vendors
-@import '7-vendors/images';
 
-img{
+//Setting Images
+img {
   @include images;
 }
-//seachlocalisator
-.area-search{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $background-color ;
-  box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.3);
-  color: $color-text-localisator;
-  height: 4rem;
-  &-button{
-    background-color: $second-color-area;
-    padding: 2rem;                                     //revoir pour pas que ca depasse en hauteur qd on retreci
-  }
-}
-
-.area-search i{
-  margin-right: 1rem;
-}
-.localisator {
-  h1{
-    text-align: center;
-    padding: 1rem 0 1rem 0;         // faire une mixin pour les autres titres de meme
-    margin: auto;
-      //revoir le font weight
-  }
-  h2{
-    text-align: center;
-    width: 66%;
-    margin: 1rem auto; 
-  }
-}
-.localisator button{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-//working
-
-.working{
-  margin: 4rem auto;
-  h1{
-    margin-left: 1rem;
-  }
-  ul{
-    padding: 1rem 1.5rem 0px 1.5rem;
-    animation: 1.5s opacity;
-  }
-  li{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid transparent;
-    border-radius: 1.5rem;
-    height: 4rem;
-    margin-bottom: 1rem;
-    background-color: $second-color-area;
-    box-shadow: $total-shadow;
-    
-    i{
-      width: 1rem;
-      margin: auto 2rem;
-    }
-    .work-icone{
-      color: $working-icone-color;
-    }
-    &:hover{
-      transition:.5s;
-      background-color: $color-primary-over;    
-       i{
-         color: $color-primary;
-       } 
-    }
-  }
-}
-.fa-circle{
-  position: absolute;
-  left: -20px;
-  color: $color-primary;
-  font-size: 33px;
-}
-
-.circle-number{
-  position: absolute;
-  color: $light-color;
-  left: 23px;
-}
-
-
-//list resto
-
-.restaurant-list{
-  background-color: #F2F2F2;        //trouver variable
-  &__article{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  }
-  h1{
-    margin-left: 1rem;
-    padding-top: 20px;
-  }
-  h2,p{
-    color: #000000;
-  }
-  .restaurant-presentation{
-    padding: 1rem 0 1rem 1rem;
-  }
-}
+ 
+//Articles-home/menu
 article{
   @include fadein;
   @include background-article;
   box-shadow: $total-shadow;
-  .photo{
-    width: 100%;
-    margin: auto;
-  }
-  img{
-  height: 9rem;
-  border-radius: $radius-top-corner;
-  }
-  h2{
-    font-weight: 700;
-  }
-  .fa-heart{
-    @include heart;
-  }
-}
-
-.new-block{
-  position: absolute;
-   top: 14px;
-   right: 13px;
-   background-color:$icon-appear;
-   padding: .5rem;
-   color: $text-new;
-}
-
-//menu display dans le menu a la francaise
-//margin left: 10px
-
-.main-menu{
-  display: flex;
-  flex-direction: column;
-  background-color: $second-color-area;
-  border-radius: $radius-top-corner;
-  padding: 2rem 0;
-  margin-top: -2rem;
-  position: relative;
-  h1{
-    font-family: 'Shrikhand';
-    font-size: 1.8em;
-  }
-  h2{
-    font-size: 1rem;
-    color: $color-text-localisator;
-  }
-  .fa-heart{
-    @include heart($none);
-    margin-left: 5rem;
-    margin-top: .5rem;
-  }
-  p{
-    font-size: .8rem;
-    color: $color-text-localisator;
-  }
-  button p{
-    color: $light-color;
-  }
-}
-
-.title-menu{
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1rem ;
-}
-
-//Margin all the h1 and h2
-.h-menu{
-  margin-left: $margin-left;
-}
-
-.menu-display article{
-  @include background-article;
-  overflow: hidden;
-  a{
-    display: flex;
-    width: 100%;       //give some space to the price
-  }
-  &:hover{
-    .anim-menu-bg{
-      padding: 0 2rem;
-      width: 2rem;
-      .fa-check-circle{
-        transition:.5s;
-        transform:rotate(360deg);
-        padding: 0 1.5rem;
-        
-      }
+    .photo{
+      width: 100%;
+      margin: auto;
     }
+    img{
+    height: 9rem;
+    border-radius: $radius-top-corner;
+    }
+    h2{
+      font-weight: 700;
+      padding-bottom: $padding-main-description;
+    }
+    .fa-heart{
+      @include heart;
+    }
+}
+
+//Animation Preload
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 40px;
+	@include flex;
+}
+.hideMe {
+  animation: cssAnimation 1s forwards;
+	-webkit-animation: cssAnimation 1s forwards;
+}
+@keyframes cssAnimation {
+	100% {
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
+}
+@-webkit-keyframes cssAnimation {
+	100% {
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
+}
+.block-screen {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, .7);
+}
+.cercle-anim {
+	width: 30px;
+	height: 30px;
+	background: #9356DC;
+	margin: 0 10px;
+	border-radius: 50%;
+	animation: loading 2s infinite;
+	box-shadow: 0px 0px 1px 2px #99E2D0;
+}
+.cercle-anim:nth-child(2) {
+  animation-delay: 0.1s;
+  background-color: #FF79DA;
+  box-shadow: 0px 0px 1px 2px  #9356DC;
+
+}
+.cercle-anim:nth-child(3) {
+  animation-delay: 0.2s;
+  background-color: #99E2D0;
+  box-shadow: 0px 0px 1px 2px #FF79DA;
+
+}
+
+@keyframes loading {
+	0% {
+		transform: scale(0);
+	}
+	33% {
+		transform: scale(1);	
   }
-}
-
-.menu-legende{
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding:1rem;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.menu-sous-legende{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.anim-menu-bg{
-  background-color: $icon-appear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 2rem 2rem 0;
-  width: 0;                 //allow to hide
-  padding: 1rem 0;
-  -webkit-transition: all 0.55s;
-  &--icon{  
-    color: $light-color;
-    justify-content: center;
+  66%{
+    transform: scale(0);
   }
+	100% {
+    transform: scale(1);
+		
+	}
 }
-.plat-name, .description{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.prix-legende{
-  padding-right: 1.5rem;
-}
-.fa-check-circle{
-  position: static;    // counter abs-position in "article i"default
-}
- 
-.underline{
-  border-top: 2px solid $icon-appear;
-  width: 2.5rem;
-  margin-left: $margin-left;
-}
-
-
-
-
-

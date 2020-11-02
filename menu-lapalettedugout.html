@@ -3,49 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/style.css">
+  <link rel="stylesheet" href="./dist/css/style.css">
                             <!--  Lien Vers FontAwesome, Icone  -->
   <script src="https://kit.fontawesome.com/03dfdc2ac6.js" crossorigin="anonymous"></script> 
-  <title>La palette du goût</title>
+  <title>À la française</title>
 </head>
 <body>
                            <!-- Debut Header -->
-  <header>
+  <header class="header-menu">
     <a href="index.html">
       <i class="fas fa-arrow-left"></i>
     </a>
-    <img src="/sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood noir">
+    <img src="./sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood noir">
   </header>
                            <!-- Fin Header -->  
                            <!-- Debut Main-->
   <main>                         
-    <img src="" alt="presentation assiette du Ménilmontant">                         
+    <div class="background-image-menu">
+      <img src="./sass/ressources/images/lapalettedugout.jpg" alt="">
+    </div>             <!--rajouter ds class nom du menu pour different BG-->         
                            <!-- Debut Carte-->
-    <section>
-      <div>
-        <h1>La palette du goût</h1><i class="far fa-heart"></i>
+    <section class="main-menu">
+      <div class="title-menu h-menu">
+        <h1>La palette du goût</h1><i class="fas fa-heart"></i>
+        
       </div>
-      <section>
-        <h2>ENTRÉES</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <section>
-        <h2>PLATS</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <section>
-        <h2>DESSERTS</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <button type="button" class="button">
-        <p class="button-rechercher">Commander</p>
-      </button> 
+      <section class="menu-display">
+        <h2 class="h-menu">ENTRÉES</h2>
+        <div class="underline"></div>
+        <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Fricassée d'escargot
+                </h2>
+              <div class="menu-sous-legende">
+                 <div class="description"> Au piment d'espelette</div>
+                  <p class="prix-legende">25€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Foie gras de canard mi-cuit
+              </h2>
+            <div class="menu-sous-legende">
+               <div class="description"> Et ses copeaux de truffe noire</div>
+                <p class="prix-legende">35€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Oeuf au plat 
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description">Assaisonné à la truffe sur lit de caviar </div>
+                  <p class="prix-legende">20€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+          </section>
+          <section class="menu-display">
+            <h2 class="h-menu">PLATS</h2>
+            <div class="underline"></div>
+            <article class="article">
+              <figure class="menu-legende">
+                  <h2 class="plat-name">
+                    Filet de boeuf aux herbes 
+                  </h2>
+                <div class="menu-sous-legende">
+                  <div class="description"> Accompagnées de sa ribambelle de légumes</div>
+                    <p class="prix-legende">40€</p>
+                </div>
+                </figcaption>
+              </figure>
+              <div class="anim-menu-bg">
+                <div class="anim-menu-bg--icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Parmentier de queue de boeuf
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description"> À la truffe noire sur sa purée de panais </div>
+                  
+                  <p class="prix-legende">35€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+               Filet de Turbot
+              </h2>
+            <div class="menu-sous-legende">
+              <div class="description"> Aux agrumes</div>
+                
+                <p class="prix-legende">44€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+      </article>
+          </section>
+          <section class="menu-display">
+            <h2 class="h-menu">DESSERTS</h2>
+            <div class="underline"></div>
+            <article class="article">
+              <figure class="menu-legende">
+                  <h2 class="plat-name">
+                    Paris-Brest
+                  </h2>
+                <div class="menu-sous-legende">
+                  <div class="description">Revisité</div>
+                    <p class="prix-legende">18€</p>
+                </div>
+                </figcaption>
+              </figure>
+              <div class="anim-menu-bg">
+                <div class="anim-menu-bg--icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Macaron au chocolat d'exception
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description"> Et glace à la vanille de Madagascar</div>
+                  
+                  <p class="prix-legende">22€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Mousse au chocolat
+              </h2>
+            <div class="menu-sous-legende">
+              <div class="description">Au piment d'espelette et à la truffe noire</div>
+                
+                <p class="prix-legende">23€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+      </article>
+          </section>
+          <button type="button" class="button">
+            <p class="button-rechercher">Commander</p>
+          </button> 
     </section>                         
   </main>  
                            <!-- Fin Carte -->
@@ -53,7 +207,7 @@
   </main>
                             <!-- Debut Footer-->
   <footer>
-    <img src="/sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood blanc">
+    <img src="./sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood blanc">
     <ul>
       <li><a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
       <li><a href=""><i class="fas fa-handshake"></i>Devenir partenaire</a></li>

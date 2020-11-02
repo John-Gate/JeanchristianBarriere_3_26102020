@@ -3,49 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/style.css">
+  <link rel="stylesheet" href="./dist/css/style.css">
                             <!--  Lien Vers FontAwesome, Icone  -->
   <script src="https://kit.fontawesome.com/03dfdc2ac6.js" crossorigin="anonymous"></script> 
-  <title>Le délice des sens</title>
+  <title>À la française</title>
 </head>
 <body>
                            <!-- Debut Header -->
-  <header>
+  <header class="header-menu">
     <a href="index.html">
       <i class="fas fa-arrow-left"></i>
     </a>
-    <img src="/sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood noir">
+    <img src="./sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood noir">
   </header>
                            <!-- Fin Header -->  
                            <!-- Debut Main-->
   <main>                         
-    <img src="" alt="presentation assiette Folie-Méricourt">                         
+    <div class="background-image-menu">
+      <img src="./sass/ressources/images/ledelicedessens.jpg" alt="">
+    </div>             <!--rajouter ds class nom du menu pour different BG-->         
                            <!-- Debut Carte-->
-    <section>
-      <div>
-        <h1>Le délice des sens</h1><i class="far fa-heart"></i>
+    <section class="main-menu">
+      <div class="title-menu h-menu">
+        <h1>La palette du goût</h1><i class="fas fa-heart"></i>
+        
       </div>
-      <section>
-        <h2>ENTRÉES</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <section>
-        <h2>PLATS</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <section>
-        <h2>DESSERTS</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <button type="button" class="button">
-        <p class="button-rechercher">Commander</p>
-      </button> 
+      <section class="menu-display">
+        <h2 class="h-menu">ENTRÉES</h2>
+        <div class="underline"></div>
+        <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Tartare de thon
+                </h2>
+              <div class="menu-sous-legende">
+                 <div class="description"> Assaisonné au yuzu</div>
+                  <p class="prix-legende">25€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Bouchée de homard croustillant
+              </h2>
+            <div class="menu-sous-legende">
+               <div class="description"> Et sa farandole de petits légumes</div>
+                <p class="prix-legende">35€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Velouté de cèpes  
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description">Aux truffes </div>
+                  <p class="prix-legende">20€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+          </section>
+          <section class="menu-display">
+            <h2 class="h-menu">PLATS</h2>
+            <div class="underline"></div>
+            <article class="article">
+              <figure class="menu-legende">
+                  <h2 class="plat-name">
+                    Poulet rôtie aux herbes de provence 
+                  </h2>
+                <div class="menu-sous-legende">
+                  <div class="description"> Et sa crème de truffe</div>
+                    <p class="prix-legende">40€</p>
+                </div>
+                </figcaption>
+              </figure>
+              <div class="anim-menu-bg">
+                <div class="anim-menu-bg--icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Langouste rôtie
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description"> Et ses légumes de saison </div>
+                  <p class="prix-legende">35€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+               Côte de boeuf angus
+              </h2>
+            <div class="menu-sous-legende">
+              <div class="description"> Et sa purée de panais</div>
+                <p class="prix-legende">44€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+      </article>
+          </section>
+          <section class="menu-display">
+            <h2 class="h-menu">DESSERTS</h2>
+            <div class="underline"></div>
+            <article class="article">
+              <figure class="menu-legende">
+                  <h2 class="plat-name">
+                    Farandole de desserts
+                  </h2>
+                <div class="menu-sous-legende">
+                  <div class="description">Du chef</div>
+                    <p class="prix-legende">18€</p>
+                </div>
+                </figcaption>
+              </figure>
+              <div class="anim-menu-bg">
+                <div class="anim-menu-bg--icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Crème brulée
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description">Revisitée</div>
+                  
+                  <p class="prix-legende">22€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Tiramisu
+              </h2>
+            <div class="menu-sous-legende">
+              <div class="description">À la noisette</div>
+                
+                <p class="prix-legende">23€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+      </article>
+          </section>
+          <button type="button" class="button">
+            <p class="button-rechercher">Commander</p>
+          </button> 
     </section>                         
   </main>  
                            <!-- Fin Carte -->
@@ -53,7 +205,7 @@
   </main>
                             <!-- Debut Footer-->
   <footer>
-    <img src="/sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood blanc">
+    <img src="./sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood blanc">
     <ul>
       <li><a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
       <li><a href=""><i class="fas fa-handshake"></i>Devenir partenaire</a></li>

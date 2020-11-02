@@ -1,4 +1,13 @@
 //////////////
+//Flex
+/////////////
+@mixin flex{                    // regular centering-flexbox
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//////////////
 //Button
 /////////////
 @mixin button{
@@ -15,7 +24,6 @@
   background: $gradient;
   outline: none;
   height: 3rem;
-  width: 14rem;
     p{
       color: $light-color;
       font-weight: 700;
@@ -29,12 +37,7 @@
   display: block;
   width: 100%;
   object-fit: cover;
-}
-
-///////////
-//shadow
-///////////
-@mixin main-shadow{
+  height: 16rem;
 }
 
 ///////////////////////
@@ -43,7 +46,7 @@
 @mixin background-article{
   position: relative;
   background-color: $light-color;
-  border-radius: 2rem;
+  border-radius: $radius-full;
   width: 80%;
   margin: 1rem auto;
   display: flex;
@@ -53,7 +56,6 @@
 //////////////////////////////////////////////
 //Key-rames to declare before your animation
 //////////////////////////////////////////////
-
 @keyframes fade-in {
 	0% {
 		opacity: 0;
@@ -72,16 +74,15 @@
 		opacity: 1;
 	}
 }
+
 ////////////
 //animation
 ////////////
-
 @mixin fadein{
   animation: 1s fade-in ease-out;
   animation-fill-mode: backwards;
   animation-delay: 1s;
   }
-
 
 @mixin heart($position:absolute,$right:$right-home, $bottom:$bottom-home) {
   position: $position;

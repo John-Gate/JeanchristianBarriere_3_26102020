@@ -1,7 +1,6 @@
 ////////////////////
 //Colors Variables
 ////////////////////
-
 //Purple
 $color-primary:#9356DC;//color icone+gradient
 $color-primary-over:#f5edff;
@@ -9,6 +8,9 @@ $color-primary-over:#f5edff;
 $color-secondary:#FF79DA;
 //Green
 $color-tertiary:#99E2D0;
+//anim-green
+$icon-appear:#99e2d0;
+$text-new:#008766;
 //Grey
 $location-color:#EAEAEA;
 $background-color:#DDDD;
@@ -21,31 +23,49 @@ $color-text-localisator:#0E0E0E;//Black used in text
 $light-color:#FFFFFF;
 //Gradient
 $gradient:linear-gradient($color-secondary, $color-primary);
-//anim
-$icon-appear:#99e2d0;
-$text-new:#008766;
-//shadow
+
+
+////////////
+//Shadow
+////////////
 $total-shadow: 1px 1px 15px rgb(158, 158, 158);
 
 ////////////
 //Margin
 ////////////
-$margin-left:1rem;
+$margin-title:1rem;   //margin title 
 $right-home:11px;
 $right-menu:75px;
 $bottom-home:27px;
 $none:none;
-// $title-bottom:;
 
 ////////////
-//Position
+//Padding
 ////////////
-$absolute:absolute;
+$padding-title-h1:1rem 0 1rem 0;
+$padding-full-2:2rem;
+$padding-main-description:.3rem;
+
+////////////
+//Font-size
+////////////
+$size-title-home:1rem;
+$size-title-menu:1.5rem;
+$size-price:1rem;
+$size-description:.7rem;
+
+////////////
+//Font-weight
+////////////
+$weight-h1:800;
+$weight-h2:700;
 
 ////////////
 //Radius
 ////////////
-$radius-top-corner: 2rem 2rem 0 0;
+$radius-top-corner: 1rem 1rem 0 0;
+$radius-full:1rem;
+
 
 
 

@@ -3,49 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/style.css">
+  <link rel="stylesheet" href="./dist/css/style.css">
                             <!--  Lien Vers FontAwesome, Icone  -->
   <script src="https://kit.fontawesome.com/03dfdc2ac6.js" crossorigin="anonymous"></script> 
-  <title>La note enchantée</title>
+  <title>À la française</title>
 </head>
 <body>
                            <!-- Debut Header -->
-  <header>
+  <header class="header-menu">
     <a href="index.html">
       <i class="fas fa-arrow-left"></i>
     </a>
-    <img src="/sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood noir">
+    <img src="./sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood noir">
   </header>
                            <!-- Fin Header -->  
                            <!-- Debut Main-->
   <main>                         
-    <img src="" alt="presentation assiette Charonne">                         
+    <div class="background-image-menu">
+      <img src="./sass/ressources/images/lanoteenchantee.jpg" alt="">
+    </div>             <!--rajouter ds class nom du menu pour different BG-->         
                            <!-- Debut Carte-->
-    <section>
-      <div>
-        <h1>La note enchantée</h1><i class="far fa-heart"></i>
+    <section class="main-menu">
+      <div class="title-menu h-menu">
+        <h1>La note enchantée</h1><i class="fas fa-heart"></i>
+        
       </div>
-      <section>
-        <h2>ENTRÉES</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <section>
-        <h2>PLATS</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <section>
-        <h2>DESSERTS</h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-      <button type="button" class="button">
-        <p class="button-rechercher">Commander</p>
-      </button> 
+      <section class="menu-display">
+        <h2 class="h-menu">ENTRÉES</h2>
+        <div class="underline"></div>
+        <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Ravioles de foie gras
+                </h2>
+              <div class="menu-sous-legende">
+                 <div class="description"> Accompagnés de leur crème à la truffe</div>
+                  <p class="prix-legende">25€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Caviar osciètre
+              </h2>
+            <div class="menu-sous-legende">
+               <div class="description">Sur blini à la farine de blé noir</div>
+                <p class="prix-legende">35€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Homard et espuma de vie
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description"> Mariné aux zests d'orange</div>
+                  <p class="prix-legende">20€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Foie gras de canard cuit entier
+              </h2>
+            <div class="menu-sous-legende">
+              <div class="description"> Confiture de figue et pain tosté</div>
+                <p class="prix-legende">35€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+      </article>
+          </section>
+          <section class="menu-display">
+            <h2 class="h-menu">PLATS</h2>
+            <div class="underline"></div>
+            <article class="article">
+              <figure class="menu-legende">
+                  <h2 class="plat-name">
+                    Noix de coquilles Saint-Jacques
+                  </h2>
+                <div class="menu-sous-legende">
+                  <div class="description"> Sur lit de purée de éleri-rave</div>
+                    
+                    <p class="prix-legende">40€</p>
+                </div>
+                </figcaption>
+              </figure>
+              <div class="anim-menu-bg">
+                <div class="anim-menu-bg--icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Langoustine poêlée
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description"> Purée de patate douce</div>
+                  
+                  <p class="prix-legende">35€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Mijoté de queue de boeuf
+              </h2>
+            <div class="menu-sous-legende">
+              <div class="description"> Et riz sauvage aux zests de citron</div>
+                
+                <p class="prix-legende">44€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+      </article>
+          </section>
+          <section class="menu-display">
+            <h2 class="h-menu">DESSERTS</h2>
+            <div class="underline"></div>
+            <article class="article">
+              <figure class="menu-legende">
+                  <h2 class="plat-name">
+                    Macaron noisette et chocolat
+                  </h2>
+                <div class="menu-sous-legende">
+                  <div class="description"> Glace au caramel brun et sel de Guérande</div>
+                    
+                    <p class="prix-legende">18€</p>
+                </div>
+                </figcaption>
+              </figure>
+              <div class="anim-menu-bg">
+                <div class="anim-menu-bg--icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+          </article>
+          <article class="article">
+            <figure class="menu-legende">
+                <h2 class="plat-name">
+                  Baba au rhum revisité
+                </h2>
+              <div class="menu-sous-legende">
+                <div class="description"> Avec son coulis de citron</div>
+                  
+                  <p class="prix-legende">22€</p>
+              </div>
+              </figcaption>
+            </figure>
+            <div class="anim-menu-bg">
+              <div class="anim-menu-bg--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+        </article>
+        <article class="article">
+          <figure class="menu-legende">
+              <h2 class="plat-name">
+                Tarte au citron meringuée
+              </h2>
+            <div class="menu-sous-legende">
+              <div class="description"> Destructurée</div>
+                
+                <p class="prix-legende">23€</p>
+            </div>
+            </figcaption>
+          </figure>
+          <div class="anim-menu-bg">
+            <div class="anim-menu-bg--icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+      </article>
+          </section>
+          <button type="button" class="button">
+            <p class="button-rechercher">Commander</p>
+          </button> 
     </section>                         
   </main>  
                            <!-- Fin Carte -->
@@ -53,7 +226,7 @@
   </main>
                             <!-- Debut Footer-->
   <footer>
-    <img src="/sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood blanc">
+    <img src="./sass/ressources/logo/ohmyfood@2x.svg" alt="logo ohmyfood blanc">
     <ul>
       <li><a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
       <li><a href=""><i class="fas fa-handshake"></i>Devenir partenaire</a></li>

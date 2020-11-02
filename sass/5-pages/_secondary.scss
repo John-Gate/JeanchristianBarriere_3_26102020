@@ -1,0 +1,130 @@
+
+.main-menu{
+  display: flex;
+  flex-direction: column;
+  background-color: $second-color-area;
+  border-radius: $radius-top-corner;
+  padding: 2rem 0;
+  margin-top: -2rem;
+  position: relative;
+  h1{
+    font-family: 'Shrikhand';
+    font-weight:$weight-h1 ;
+    font-size:$size-title-menu ;
+    
+  }
+  h2{
+    font-size: $size-title-home;
+    color: $color-text-localisator;
+  }
+  .fa-heart{
+    @include heart($none);
+    position: absolute;
+    top:42px;
+    right: 55px;
+  }
+  p{
+    color: $color-text-localisator;
+  }
+  button p{
+    color: $light-color;
+  }
+  .title-menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem ;
+    @media screen and (min-width:600px){
+      @include flex;
+      }
+  }
+}
+.h-menu{
+  margin-left: $margin-title;
+}
+.menu-display {
+    article{
+      @include background-article;
+      overflow: hidden;
+        a{
+          display: flex;
+          width: 100%;       //give some space to the price
+        }
+        &:hover{
+          .anim-menu-bg{
+            padding: 0 2rem;
+            width: 1rem;
+            .fa-check-circle{
+              transition:.5s;
+              transform:rotate(360deg);
+              padding: 0 1.5rem;
+            }
+          }
+        }
+    }
+    @media screen and (min-width:600px){
+      @include flex;
+      flex-direction: column;
+      }
+  }    
+.menu-legende{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding:1rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  @media screen and (min-width:600px){
+    flex-direction: row;
+    }
+}
+.menu-sous-legende{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+    .description{
+      font-size: $size-description;
+    }
+}
+.anim-menu-bg{
+  background-color: $icon-appear;
+ @include flex;
+  width: 0;                 //allow to hide
+  padding: 1rem 0;
+  -webkit-transition: all 0.55s;
+  &--icon{  
+    color: $light-color;
+    justify-content: center;
+  }
+}
+.plat-name, .description{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (min-width:600px){
+  .plat-name{
+    width: 41%;
+  }
+}
+
+.prix-legende{
+  font-weight: 900;
+}
+.fa-check-circle{
+  position: static;    // counter abs-position in "article i"default
+}
+.underline{
+  border-top: 2px solid $icon-appear;
+  width: 2.5rem;
+  margin-left: $margin-title;
+  @media screen and (min-width:600px){
+  display: none;
+  }
+}
+
+
+
+
+
