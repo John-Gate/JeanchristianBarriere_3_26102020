@@ -18,7 +18,7 @@
     color: $color-text-localisator;
   }
   .fa-heart{
-    @include heart($none);
+    @include heart;
     position: absolute;
     top:42px;
     right: 55px;
@@ -45,6 +45,7 @@
     article{
       @include background-article;
       overflow: hidden;
+      display: flex;
         a{
           display: flex;
           width: 100%;       //give some space to the price
