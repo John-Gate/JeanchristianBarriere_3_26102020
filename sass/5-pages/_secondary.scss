@@ -76,9 +76,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  @media screen and (min-width:600px){
-    flex-direction: row;
-    }
 }
 .menu-sous-legende{
   width: 100%;
@@ -86,7 +83,9 @@
   justify-content: space-between;
     .description{
       font-size: $size-description;
+      padding-top: 0.3rem;
     }
+  
 }
 .anim-menu-bg{
   background-color: $icon-appear;
@@ -117,12 +116,9 @@
   position: static;    // counter abs-position in "article i"default
 }
 .underline{
-  border-top: 2px solid $icon-appear;
+  border-bottom: 2px solid $icon-appear;
   width: 2.5rem;
   margin-left: $margin-title;
-  @media screen and (min-width:600px){
-  display: none;
-  }
 }
 
 

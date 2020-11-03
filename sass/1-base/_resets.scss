@@ -7,10 +7,13 @@ body{
   width: 100%;
   margin: auto;
   font-family: "Roboto", sans-serif;
+  @media screen and (min-width:1024px){
+  width:1400px ;
+  }
 }
 
 
-h1, h2,p{
+h1, h2, h3,p{
   margin: 0;
 }
 

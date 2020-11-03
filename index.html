@@ -18,24 +18,24 @@
   <main>
     <div class="preload">
       <div class="preload__screen">
-       <div class="preload__screen--loading">
-           <div class="cercle-anim"></div>
-           <div class="cercle-anim"></div>
-           <div class="cercle-anim"></div>
+       <div class="preload__screenLoading">
+           <div class="preload__screenLoading--cercleAnim"></div>
+           <div class="preload__screenLoading--cercleAnim"></div>
+           <div class="preload__screenLoading--cercleAnim"></div>
        </div>
       </div>
     </div>
                             <!-- Debut Encadre Titre -->
     <section class="localisator">
-      <div class="area-search">
+      <div class="areaSearch">
         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
         <p>Paris, Belleville</p>
       </div>
-      <div class="area-search-button">
+      <div class="areaSearch__description">
         <h1>Réservez le menu qui vous convient</h1>
         <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
         <button type="button" class="button">
-          <span class="button-rechercher">Explorer nos restaurants</span>
+          <span class="button__rechercher">Explorer nos restaurants</span>
         </button> 
       </div>
     </section>
@@ -44,21 +44,21 @@
     <section class="working">
       <h1>Fonctionnement</h1>      
       <ul>
-        <li><i class="fas fa-circle"></i><div class="circle-number">1</div><i class="fas fa-mobile-alt work-icone"></i>Choisissez un restaurant</li>
-        <li><i class="fas fa-circle"></i><div class="circle-number">2</div><i class="fas fa-list-ul work-icone"></i>Composez votre menu</li>
-        <li><i class="fas fa-circle"></i><div class="circle-number">3</div><i class="fas fa-store work-icone"></i>Dégustez au restaurant</li>
+        <li><i class="fas fa-circle"></i><div class="circle-number">1</div><i class="fas fa-mobile-alt working__icone"></i>Choisissez un restaurant</li>
+        <li><i class="fas fa-circle"></i><div class="circle-number">2</div><i class="fas fa-list-ul working__icone"></i>Composez votre menu</li>
+        <li><i class="fas fa-circle"></i><div class="circle-number">3</div><i class="fas fa-store working__icone"></i>Dégustez au restaurant</li>
       </ul>  
     </section>              
                             <!-- Fin Fonctionnement-->
                             <!-- Debut Liste Restaurant-->
-    <section class="restaurant-list">
+    <section class="restaurantList">
       <h1>Restaurants</h1>
-      <div class="restaurant-list__article">
+      <div class="restaurantList__article">
         <article>
           <a href="./menu-lapalettedugout.html">
             <figure class="photo">
-              <img class="" alt="presentation assiette du Ménilmontant" src="./sass/ressources/images/lapalettedugout.jpg"> <!-- IMAGES A REMANIER UNE FOIS CSS FAIT-->
-              <figcaption class="restaurant-presentation">
+              <img class="" alt="presentation assiette du Ménilmontant" src="./sass/ressources/images/lapalettedugout.jpg">
+              <figcaption class="restaurantList__articlePresentation">
                 <h2 class="">
                   La palette du goût
                 </h2>
@@ -76,9 +76,10 @@
           <a href="./menu-lanoteenchantee.html">
             <figure class="photo">
               <img class="" alt="presentation assiette Charonne" src="./sass/ressources/images/lanoteenchantee.jpg">
-              <figcaption class="restaurant-presentation">
-                <h2 class="">
+              <figcaption class="restaurantList__articlePresentation">
+                <h2 class="menumenu">
                   La note enchantée
+                  
                 </h2>
                 <p class="sous-titre">Charonne
                   <i class="fas fa-heart heart-1"></i>
@@ -94,7 +95,7 @@
           <a href="./menu-alafrancaise.html">
             <figure class="photo">
               <img class="" alt="presentation assiette Cité rouge" src="./sass/ressources/images/alafrancaise.jpg">
-              <figcaption class="restaurant-presentation">
+              <figcaption class="restaurantList__articlePresentation">
                 <h2 class="">
                   À la française
                 </h2>
@@ -109,7 +110,7 @@
           <a href="./menu-ledelicedessens.html">
             <figure class="photo">
               <img class="" alt="presentation assiette Folie-Méricourt" src="./sass/ressources/images/ledelicedessens.jpg">
-              <figcaption class="restaurant-presentation">
+              <figcaption class="restaurantList__articlePresentation">
                 <h2 class="">
                   Le délice des sens
                 </h2>

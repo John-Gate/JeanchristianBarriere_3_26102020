@@ -19,12 +19,19 @@
   border: 1px #ccc solid;
   display: inline-block;
   text-decoration: none;
-  color: $lightcolor;
+  color:$light-color;
   border-radius: 50px;
   background: $gradient;
   outline: none;
   height: 3rem;
   font-weight: 700;
+  transition: all 1s ease;
+  &:hover{
+  transform: scale(1.01) ;
+  box-shadow: $total-shadow;
+  background: $gradient--button;
+  transition-delay:.1s;
+  }
 }
 
 /////////
@@ -47,7 +54,6 @@
   width: 80%;
   margin: 1rem auto;
 }
-
 
 //////////////////////////////////////////////
 //Key-rames to declare before your animation

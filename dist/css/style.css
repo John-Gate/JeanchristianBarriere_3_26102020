@@ -11,8 +11,13 @@ body {
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
+@media screen and (min-width: 1024px) {
+  body {
+    width: 1400px;
+  }
+}
 
-h1, h2, p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -91,6 +96,81 @@ footer li a i {
   padding-right: 20px;
 }
 
+.preload {
+  animation: cssAnimation 2s forwards;
+  -webkit-animation: cssAnimation 2s forwards;
+}
+.preload__screen {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+.preload__screenLoading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes cssAnimation {
+  100% {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  100% {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+.preload__screenLoading--cercleAnim {
+  width: 30px;
+  height: 30px;
+  background: #9356DC;
+  margin: 0 10px;
+  border-radius: 50%;
+  animation: loading 2s infinite;
+  box-shadow: 0px 0px 1px 2px #99E2D0;
+}
+
+.preload__screenLoading--cercleAnim:nth-child(2) {
+  animation-delay: 0.1s;
+  background-color: #FF79DA;
+  box-shadow: 0px 0px 1px 2px #9356DC;
+}
+
+.preload__screenLoading--cercleAnim:nth-child(3) {
+  animation-delay: 0.2s;
+  background-color: #99E2D0;
+  box-shadow: 0px 0px 1px 2px #FF79DA;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(0);
+  }
+  33% {
+    transform: scale(1);
+  }
+  66% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .button {
   display: flex;
   justify-content: center;
@@ -100,18 +180,70 @@ footer li a i {
   border: 1px #ccc solid;
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #FFFFFF;
   border-radius: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
   outline: none;
   height: 3rem;
-}
-.button span {
-  color: #FFFFFF;
   font-weight: 700;
+  transition: all 1s ease;
+}
+.button:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 15px #9e9e9e;
+  background: linear-gradient(#fface8, #ae80e5);
+  transition-delay: 0.1s;
 }
 
-.area-search {
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 16rem;
+}
+
+article {
+  animation: 1s fade-in ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 1rem auto;
+  box-shadow: 1px 1px 15px #9e9e9e;
+}
+article .photo {
+  width: 100%;
+  margin: auto;
+}
+article img {
+  height: 9rem;
+  border-radius: 1rem 1rem 0 0;
+}
+article h2 {
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+}
+article .fa-heart {
+  position: absolute;
+  right: 11px;
+  bottom: 27px;
+  font-size: 20px;
+  color: transparent;
+  -webkit-text-stroke: 1px darkslategray;
+  stroke-width: 50;
+  padding: 1px;
+}
+article .fa-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px transparent;
+  transition: 200ms ease-in-out;
+}
+
+.areaSearch {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,11 +252,11 @@ footer li a i {
   color: #0E0E0E;
   height: 4rem;
 }
-.area-search-button {
+.areaSearch__description {
   background-color: #F6F6F6;
   padding: 2rem;
 }
-.area-search i {
+.areaSearch i {
   margin-right: 1rem;
 }
 
@@ -189,7 +321,7 @@ footer li a i {
   width: 1rem;
   margin: auto 2rem;
 }
-.working li .work-icone {
+.working li__icone {
   color: #696969;
 }
 .working li:hover {
@@ -233,63 +365,63 @@ footer li a i {
   left: 23px;
 }
 
-.restaurant-list {
+.restaurantList {
   background-color: #F6F6F6;
   padding: 2rem 0;
 }
-.restaurant-list__article {
+.restaurantList__article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-bottom: 20px;
 }
-.restaurant-list h1 {
+.restaurantList__articlePresentation {
+  padding: 1rem 0 1rem 1rem;
+}
+.restaurantList h1 {
   margin-left: 1rem;
 }
 @media screen and (min-width: 600px) {
-  .restaurant-list h1 {
+  .restaurantList h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2rem;
   }
 }
-.restaurant-list h2 {
+.restaurantList h2 {
   color: #0E0E0E;
   font-weight: 700;
   font-size: 1rem;
 }
 @media screen and (min-width: 600px) {
-  .restaurant-list h2 {
+  .restaurantList h2 {
     text-align: center;
   }
 }
-.restaurant-list p {
+.restaurantList p {
   color: #0E0E0E;
 }
 @media screen and (min-width: 600px) {
-  .restaurant-list p {
+  .restaurantList p {
     text-align: center;
   }
 }
-.restaurant-list .restaurant-presentation {
-  padding: 1rem 0 1rem 1rem;
-}
 @media screen and (min-width: 600px) {
-  .restaurant-list {
+  .restaurantList {
     background-color: transparent;
   }
 }
 @media screen and (min-width: 600px) {
-  .restaurant-list__article {
+  .restaurantList__article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .restaurant-list__article article {
+  .restaurantList__article article {
     margin: 1rem;
     width: 40%;
     flex-wrap: wrap;
@@ -408,11 +540,6 @@ footer li a i {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-@media screen and (min-width: 600px) {
-  .menu-legende {
-    flex-direction: row;
-  }
-}
 
 .menu-sous-legende {
   width: 100%;
@@ -421,6 +548,7 @@ footer li a i {
 }
 .menu-sous-legende .description {
   font-size: 0.7rem;
+  padding-top: 0.3rem;
 }
 
 .anim-menu-bg {
@@ -457,138 +585,9 @@ footer li a i {
 }
 
 .underline {
-  border-top: 2px solid #99e2d0;
+  border-bottom: 2px solid #99e2d0;
   width: 2.5rem;
   margin-left: 1rem;
-}
-@media screen and (min-width: 600px) {
-  .underline {
-    display: none;
-  }
-}
-
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  height: 16rem;
-}
-
-article {
-  animation: 1s fade-in ease-out;
-  animation-fill-mode: backwards;
-  animation-delay: 1s;
-  position: relative;
-  background-color: #FFFFFF;
-  border-radius: 1rem;
-  width: 80%;
-  margin: 1rem auto;
-  box-shadow: 1px 1px 15px #9e9e9e;
-}
-article .photo {
-  width: 100%;
-  margin: auto;
-}
-article img {
-  height: 9rem;
-  border-radius: 1rem 1rem 0 0;
-}
-article h2 {
-  font-weight: 700;
-  padding-bottom: 0.3rem;
-}
-article .fa-heart {
-  position: absolute;
-  right: 11px;
-  bottom: 27px;
-  font-size: 20px;
-  color: transparent;
-  -webkit-text-stroke: 1px darkslategray;
-  stroke-width: 50;
-  padding: 1px;
-}
-article .fa-heart:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px transparent;
-  transition: 200ms ease-in-out;
-}
-
-.preload {
-  animation: cssAnimation 2s forwards;
-  -webkit-animation: cssAnimation 2s forwards;
-}
-.preload__screen {
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.7);
-}
-.preload__screen--loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes cssAnimation {
-  100% {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes cssAnimation {
-  100% {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-}
-.cercle-anim {
-  width: 30px;
-  height: 30px;
-  background: #9356DC;
-  margin: 0 10px;
-  border-radius: 50%;
-  animation: loading 2s infinite;
-  box-shadow: 0px 0px 1px 2px #99E2D0;
-}
-
-.cercle-anim:nth-child(2) {
-  animation-delay: 0.1s;
-  background-color: #FF79DA;
-  box-shadow: 0px 0px 1px 2px #9356DC;
-}
-
-.cercle-anim:nth-child(3) {
-  animation-delay: 0.2s;
-  background-color: #99E2D0;
-  box-shadow: 0px 0px 1px 2px #FF79DA;
-}
-
-@keyframes loading {
-  0% {
-    transform: scale(0);
-  }
-  33% {
-    transform: scale(1);
-  }
-  66% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,9 +3,11 @@
 ////////////////////
 //Purple
 $color-primary:#9356DC;//color icone+gradient
-$color-primary-over:#f5edff;
+$color-primary--button:lighten($color-primary,10%);
+$color-primary-hover:#f5edff;
 //Pink
 $color-secondary:#FF79DA;
+$color-secondary--button:lighten($color-secondary,10%);
 //Green
 $color-tertiary:#99E2D0;
 //anim-green
@@ -23,6 +25,7 @@ $color-text-localisator:#0E0E0E;//Black used in text
 $light-color:#FFFFFF;
 //Gradient
 $gradient:linear-gradient($color-secondary, $color-primary);
+$gradient--button:linear-gradient($color-secondary--button, $color-primary--button);
 
 
 ////////////

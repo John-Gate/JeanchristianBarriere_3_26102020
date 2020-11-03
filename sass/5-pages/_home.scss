@@ -1,11 +1,39 @@
+
+//images settings
+img {
+  @include images;            //also ok for the menu section
+}
+
+//Articles-home/menu
+article{
+  @include fadein;
+  @include background-article;
+  box-shadow: $total-shadow;
+    .photo{
+      width: 100%;
+      margin: auto;
+    }
+    img{
+    height: 9rem;
+    border-radius: $radius-top-corner;               //also ok for the menu section
+    }
+    h2{
+      font-weight: 700;
+      padding-bottom: $padding-main-description;
+    }
+    .fa-heart{
+      @include heart;
+    }
+}
+ 
 //seachlocalisator-home
-.area-search{
+.areaSearch{
   @include flex;
   background-color: $background-color ;
   box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.3);
   color: $color-text-localisator;
   height: 4rem;
-    &-button{
+    &__description{
       background-color: $second-color-area;
       padding: $padding-full-2;                
     }
@@ -65,12 +93,12 @@
         width: 1rem;
         margin: auto 2rem;
       }
-      .work-icone{
+      &__icone{
         color: $working-icone-color;
       }
       &:hover{
         transition:.5s;
-        background-color: $color-primary-over;    
+        background-color: $color-primary-hover;    
         i{
           color: $color-primary;
         } 
@@ -106,14 +134,18 @@
 }
 
 //rest-list-home
-.restaurant-list{
+.restaurantList{
   background-color: $second-color-area; 
   padding: 2rem 0;      
     &__article{
     @include flex;
     flex-direction: column;
     padding-bottom: 20px;
-    }
+   
+  }
+  &__articlePresentation{
+    padding: 1rem 0 1rem 1rem;
+  }
     h1{
       margin-left: $margin-title;
       @media screen and (min-width:600px){
@@ -130,16 +162,13 @@
       text-align: center;
       }
     }
-    
     p{
       color: $color-text-localisator;
       @media screen and (min-width:600px){
         text-align: center;
         }
     }
-    .restaurant-presentation{
-      padding: 1rem 0 1rem 1rem;
-    }
+    
     @media screen and (min-width:600px){
     background-color: transparent;
     }
@@ -166,4 +195,5 @@
    padding: .5rem;
    color: $text-new;
 }
+
 
