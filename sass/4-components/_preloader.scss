@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .7);
+    background:rgba(255,255,255,0.7);
   &Loading {
     position: absolute;
     top: 50%;
@@ -21,7 +21,6 @@
   }
 }
 }
-
 @keyframes cssAnimation {
 	100% {
 		width: 0;
@@ -39,22 +38,22 @@
 .preload__screenLoading--cercleAnim {
 	width: 30px;
 	height: 30px;
-	background: #9356DC;
+	background:$color-primary;
 	margin: 0 10px;
 	border-radius: 50%;
 	animation: loading 2s infinite;
-	box-shadow: 0px 0px 1px 2px #99E2D0;
+	box-shadow: 0px 0px 1px 2px $icon-appear;
 }
 .preload__screenLoading--cercleAnim:nth-child(2) {
   animation-delay: 0.1s;
-  background-color: #FF79DA;
-  box-shadow: 0px 0px 1px 2px  #9356DC;
+  background-color: $color-secondary;
+  box-shadow: 0px 0px 1px 2px  $color-primary;
 
 }
 .preload__screenLoading--cercleAnim:nth-child(3) {
   animation-delay: 0.2s;
-  background-color: #99E2D0;
-  box-shadow: 0px 0px 1px 2px #FF79DA;
+  background-color:$icon-appear;
+  box-shadow: 0px 0px 1px 2px $color-secondary;
 
 }
 @keyframes loading {

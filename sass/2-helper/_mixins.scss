@@ -26,12 +26,12 @@
   height: 3rem;
   font-weight: 700;
   transition: all 1s ease;
-  &:hover{
-  transform: scale(1.01) ;
-  box-shadow: $total-shadow;
-  background: $gradient--button;
-  transition-delay:.1s;
-  }
+    &:hover{
+    transform: scale(1.01) ;
+    box-shadow: $total-shadow;
+    background: $gradient--button;
+    transition-delay:.1s;
+    }
 }
 
 /////////
@@ -67,7 +67,6 @@
 		opacity: 1;
 	}
 }
-
 @keyframes opacity{
   0% {
 		opacity: 0;
@@ -95,13 +94,13 @@
   -webkit-text-stroke: 1px darkslategray;
   stroke-width: 50;
   padding: 1px;
-  &:hover{
-    background: $gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px transparent;
-    transition: 200ms ease-in-out;
-  }   
+    &:hover{
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px transparent;
+      transition: 200ms ease-in-out;
+    }   
   
 }
  

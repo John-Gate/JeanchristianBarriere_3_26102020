@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   list-style: none;
   text-decoration: none;
@@ -55,6 +54,29 @@ header .fa-arrow-left {
   color: #0E0E0E;
 }
 
+footer {
+  background-color: #353535;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer img {
+  padding: 20px 0 0 40px;
+  width: 9rem;
+  -webkit-filter: invert(1);
+  height: auto;
+}
+footer li {
+  margin-bottom: 0.5rem;
+}
+footer li a {
+  color: #FFFFFF;
+}
+footer li a i {
+  width: 10px;
+  padding-right: 20px;
+}
 @media screen and (min-width: 600px) {
   footer {
     display: flex;
@@ -68,32 +90,6 @@ header .fa-arrow-left {
     flex-direction: row;
     margin: 1rem 1.5rem;
   }
-}
-
-footer {
-  background-color: #353535;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-footer img {
-  padding: 20px 0 0 40px;
-  width: 9rem;
-  -webkit-filter: invert(1);
-  height: auto;
-}
-
-footer li {
-  margin-bottom: 0.5rem;
-}
-footer li a {
-  color: #FFFFFF;
-}
-footer li a i {
-  width: 10px;
-  padding-right: 20px;
 }
 
 .preload {
@@ -142,7 +138,7 @@ footer li a i {
   margin: 0 10px;
   border-radius: 50%;
   animation: loading 2s infinite;
-  box-shadow: 0px 0px 1px 2px #99E2D0;
+  box-shadow: 0px 0px 1px 2px #99e2d0;
 }
 
 .preload__screenLoading--cercleAnim:nth-child(2) {
@@ -153,7 +149,7 @@ footer li a i {
 
 .preload__screenLoading--cercleAnim:nth-child(3) {
   animation-delay: 0.2s;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   box-shadow: 0px 0px 1px 2px #FF79DA;
 }
 
@@ -190,7 +186,7 @@ footer li a i {
 }
 .button:hover {
   transform: scale(1.01);
-  box-shadow: 1px 1px 15px #9e9e9e;
+  box-shadow: 1px 1px 15px #696969;
   background: linear-gradient(#fface8, #ae80e5);
   transition-delay: 0.1s;
 }
@@ -211,7 +207,7 @@ article {
   border-radius: 1rem;
   width: 80%;
   margin: 1rem auto;
-  box-shadow: 1px 1px 15px #9e9e9e;
+  box-shadow: 1px 1px 15px #696969;
 }
 article .photo {
   width: 100%;
@@ -315,7 +311,7 @@ article .fa-heart:hover {
   height: 4rem;
   margin-bottom: 1rem;
   background-color: #F6F6F6;
-  box-shadow: 1px 1px 15px #9e9e9e;
+  box-shadow: 1px 1px 15px #696969;
 }
 .working li i {
   width: 1rem;

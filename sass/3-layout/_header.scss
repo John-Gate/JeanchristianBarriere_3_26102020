@@ -4,24 +4,13 @@ header img{
   width: auto;
   margin: .5rem auto;
 }
-
- .header-menu{
-   position: relative;
- }
-
+.header-menu{
+  position: relative;
+}
 header .fa-arrow-left{
   position: absolute;
   margin:.5rem 0 0 1rem;
   color:$color-text-localisator;
 }
-footer{
-  @media screen and (min-width:600px){
-    @include flex;
-    ul, li {
-      @include flex;
-      flex-direction: row;
-      margin: 1rem 1.5rem;
-    }
-  }
-}
+
 

@@ -9,8 +9,6 @@ $color-primary-hover:#f5edff;
 $color-secondary:#FF79DA;
 $color-secondary--button:lighten($color-secondary,10%);
 //Green
-$color-tertiary:#99E2D0;
-//anim-green
 $icon-appear:#99e2d0;
 $text-new:#008766;
 //Grey
@@ -31,7 +29,7 @@ $gradient--button:linear-gradient($color-secondary--button, $color-primary--butt
 ////////////
 //Shadow
 ////////////
-$total-shadow: 1px 1px 15px rgb(158, 158, 158);
+$total-shadow: 1px 1px 15px $working-icone-color;
 
 ////////////
 //Margin
