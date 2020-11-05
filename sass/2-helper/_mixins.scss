@@ -54,10 +54,31 @@
   width: 80%;
   margin: 1rem auto;
 }
-
-//////////////////////////////////////////////
-//Key-rames to declare before your animation
-//////////////////////////////////////////////
+////////////
+//animation
+////////////
+@mixin fadein{
+  animation: 1s fade-in ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+  }
+@mixin heart($position:absolute,$right:$right-home, $bottom:$bottom-home) {
+  position: $position;
+  right: $right;
+  bottom: $bottom;
+  font-size: 20px; 
+  color: transparent;
+  -webkit-text-stroke: 1px darkslategray;
+  stroke-width: 50;
+  padding: 1px;
+    &:hover{
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px transparent;
+      transition: 200ms ease-in-out;
+    }    
+}
 @keyframes fade-in {
 	0% {
 		opacity: 0;
@@ -74,33 +95,5 @@
 	100% {
 		opacity: 1;
 	}
-}
-
-////////////
-//animation
-////////////
-@mixin fadein{
-  animation: 1s fade-in ease-out;
-  animation-fill-mode: backwards;
-  animation-delay: 1s;
-  }
-
-@mixin heart($position:absolute,$right:$right-home, $bottom:$bottom-home) {
-  position: $position;
-  right: $right;
-  bottom: $bottom;
-  font-size: 20px; 
-  color: transparent;
-  -webkit-text-stroke: 1px darkslategray;
-  stroke-width: 50;
-  padding: 1px;
-    &:hover{
-      background: $gradient;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px transparent;
-      transition: 200ms ease-in-out;
-    }   
-  
 }
  
