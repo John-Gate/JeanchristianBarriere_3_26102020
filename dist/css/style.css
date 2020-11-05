@@ -18,7 +18,6 @@ body {
 
 h1, h2, h3, p {
   margin: 0;
-  color: black;
 }
 
 @keyframes fade-in {
@@ -218,7 +217,7 @@ article img {
   height: 9rem;
   border-radius: 1rem 1rem 0 0;
 }
-article h2 {
+article h3 {
   font-weight: 700;
   padding-bottom: 0.3rem;
 }
@@ -279,11 +278,11 @@ article .fa-heart:hover {
 .working {
   margin: 4rem auto;
 }
-.working h1 {
+.working h2 {
   margin-left: 1rem;
 }
 @media screen and (min-width: 600px) {
-  .working h1 {
+  .working h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,24 +375,24 @@ article .fa-heart:hover {
 .restaurantList__articlePresentation {
   padding: 1rem 0 1rem 1rem;
 }
-.restaurantList h1 {
+.restaurantList h2 {
   margin-left: 1rem;
 }
 @media screen and (min-width: 600px) {
-  .restaurantList h1 {
+  .restaurantList h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2rem;
   }
 }
-.restaurantList h2 {
+.restaurantList h3 {
   color: #0E0E0E;
   font-weight: 700;
   font-size: 1rem;
 }
 @media screen and (min-width: 600px) {
-  .restaurantList h2 {
+  .restaurantList h3 {
     text-align: center;
   }
 }

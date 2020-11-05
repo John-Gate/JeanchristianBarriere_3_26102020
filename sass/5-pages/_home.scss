@@ -16,7 +16,7 @@ article{
     height: 9rem;
     border-radius: $radius-top-corner;               //also ok for the menu section
     }
-    h2{
+    h3{
       font-weight: 700;
       padding-bottom: $padding-main-description;
     }
@@ -62,7 +62,7 @@ article{
 //working-home
 .working{
   margin: 4rem auto;
-  h1{
+  h2{
     margin-left: 1rem;
     @media screen and (min-width:600px){
     @include flex;
@@ -145,7 +145,7 @@ article{
   &__articlePresentation{
     padding: 1rem 0 1rem 1rem;
   }
-    h1{
+    h2{
       margin-left: $margin-title;
       @media screen and (min-width:600px){
         @include flex;
@@ -153,7 +153,7 @@ article{
         }
       
     }
-    h2{
+    h3{
       color: $color-text-localisator;
       font-weight:$weight-h2 ;
       font-size:$size-title-home ;
