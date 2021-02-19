@@ -39,7 +39,7 @@ _Réaliser un prototype_
 L'IDE que j'ai utilisé est *Visual Studio Code*. 
 
 ## Évaluation
-[x]Ce projet a été validé par le jury d'OpenClassrooms le jeudi 5 novembre 2020.
+- [x]Ce projet a été validé par le jury d'OpenClassrooms le jeudi 5 novembre 2020.
 
 ## Contact
 * [Email](mailto:barrierejc@live.fr?subject=[GitHub]%20Source%20Han%20Sans)
