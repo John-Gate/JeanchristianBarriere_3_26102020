@@ -8,17 +8,17 @@
 7. [Contact](#Contact)
 
 ### Information Generale
-Intégration d’une maquette en site web :
-* Partir d’une maquette graphique pour transformer une page web en HTML CSS.
-* Implémenter une interface responsive.
-* Uiliser un système de gestion de version pour le suivie du projet et son hébergement.   
+Création d’un site web multipage HTML CSS :
+* Mettre en œuvre des effets CSS graphique avancés.
+* Assurer la cohérence graphique d’un site web.
+* Mette en place des structures de navigation pour un site web.  
 
 ### ohmyfood 
 ![Image text](https://github.com/John-Gate/jeanchristianbarriere_3_26102020/blob/main/sass/ressources/logo/ohmyfood.png)
->site web permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
+>site web 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
 
 ## Installation
-Pour ce [projet](https://john-gate.github.io/jeanchristianbarriere_2_17092020/), aucune installation n'est nécessaire.
+Pour ce [projet](https://john-gate.github.io/jeanchristianbarriere_3_26102020/), aucune installation n'est nécessaire.
 
 ## Éléments fournis
 * La maquette pour les résolutions ordinateur et téléphone nous est donné.
@@ -39,7 +39,7 @@ _Réaliser un prototype_
 L'IDE que j'ai utilisé est *Visual Studio Code*. 
 
 ## Évaluation
-Ce projet a été validé par le jury d'OpenClassrooms le vendredi 23 octobre 2020.
+[x]Ce projet a été validé par le jury d'OpenClassrooms le jeudi 5 novembre 2020.
 
 ## Contact
 * [Email](mailto:barrierejc@live.fr?subject=[GitHub]%20Source%20Han%20Sans)
