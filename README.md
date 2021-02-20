@@ -30,7 +30,7 @@ Pour ce [projet](https://john-gate.github.io/jeanchristianbarriere_3_26102020/),
 _Réaliser un prototype_
 _Pages à intégrer selon les maquettes_
 * Page d’accueil
-  -sdfdsfsd
+  * sdfdsfsd
 * Pages de menu (x4)
 _Animation_
 * Boutons
