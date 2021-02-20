@@ -28,6 +28,7 @@ _Réaliser un prototype_
 _Pages à intégrer selon les maquettes_
 * Page d’accueil
 * Pages de menu (x4)
+
 _Animation_
 * Boutons
   * Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
