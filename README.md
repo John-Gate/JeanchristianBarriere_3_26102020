@@ -21,7 +21,7 @@ Création d’un site web multipage HTML CSS :
 Pour ce [projet](https://john-gate.github.io/jeanchristianbarriere_3_26102020/), aucune installation n'est nécessaire.
 
 ## Éléments fournis
-* La maquette pour mobile.
+* La maquette mobile.
 
 ##  Cahier des charges
 _Réaliser un prototype_
