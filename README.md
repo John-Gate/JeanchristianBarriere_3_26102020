@@ -21,10 +21,7 @@ Création d’un site web multipage HTML CSS :
 Pour ce [projet](https://john-gate.github.io/jeanchristianbarriere_3_26102020/), aucune installation n'est nécessaire.
 
 ## Éléments fournis
-* La maquette pour les résolutions ordinateur et téléphone nous est donné.
-* Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
-* Les icones proviennent de Font Awesome.
-* Les couleurs de la charte sont le bleu  ![#0065FC](https://via.placeholder.com/15/0065FC/000000?text=+) `#0065FC`, et sa version plus claire ![#DEEBFF](https://via.placeholder.com/15/DEEBFF/000000?text=+) `#DEEBFF` ainsi que le gris pour le fond  ![#F2F2F2](https://via.placeholder.com/15/F2F2F2/000000?text=+) `#F2F2F2`.
+* La maquette pour mobile.
 
 ##  Cahier des charges
 _Réaliser un prototype_
@@ -40,18 +37,22 @@ _Animation_
 * Pages de menu
   * À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.
   * Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser dela droite vers la gauche. Pour cette première version, l’effet peut apparaître au survolau lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension. Un exemple de l’effet attendu est fourni
+  
 _Technologies_
 * Authorisés: HTML/SASS
 * Interdit: Javascript / Frameworks CSS / Inline CSS
+
 _Polices_
 * Logo & titres: Shrikhand
 * Texte: Roboto
+
 _Couleurs_
 * Primaire: ![#9356DC](https://via.placeholder.com/15/9356DC/000000?text=+) `#9356DC`
 * Secondaire: ![#FF79DA](https://via.placeholder.com/15/FF79DA/000000?text=+) `#FF79DA`
 * Tertiaire: ![#99E2D0](https://via.placeholder.com/15/99E2D0/000000?text=+) `#99E2D0`
+
 _Contraintes_
-* Approche mobile-first, la maquette étant fournie
+* Approche mobile-first
 * Validation *W3C* HTML / CSS
 * Compatible Chrome / Firefox
 
