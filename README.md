@@ -28,12 +28,17 @@ Pour ce [projet](https://john-gate.github.io/jeanchristianbarriere_3_26102020/),
 
 ##  Cahier des charges
 _Réaliser un prototype_
-* Le site devra être responsive. Choix des Breakpoints et des adaptations libre.
-* Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
-* Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
-* Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent d’apparence au survol. Je te laisse décider de l’effet le plus approprié.
-* Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
-* Ne pas utiliser de Framwork/Pré-compilateur CSS. Réalisaiton au Format Scratch.
+_Pages à intégrer selon les maquettes_
+* Page d’accueil
+  -sdfdsfsd
+* Pages de menu (x4)
+_Animation_
+* Boutons
+* Page d’accueil
+* Pages de menu
+_Technologies_
+* Authorisés: HTML/SASS
+* Interdit: Javascript / Frameworks CSS / Inline CSS
 
 ## Note
 L'IDE que j'ai utilisé est *Visual Studio Code*. 
