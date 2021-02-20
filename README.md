@@ -53,7 +53,7 @@ _Couleurs_
 
 _Contraintes_
 * Approche mobile-first
-* Validation *W3C* HTML / CSS
+* Validation **W3C** HTML / CSS
 * Compatible Chrome / Firefox
 
 ## Notes
